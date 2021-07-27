@@ -1,0 +1,32 @@
+spring:
+  #  main:
+  #    web-application-type: none
+#  profiles:
+#    #    active: dev
+#    active: ${profileActive}
+#  application:
+#    name: example
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/onlineshop_ums?useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+mybatis-plus:
+  #  config-location: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#usr:
+#  name: haha
+server:
+  port: 11000
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        service: example
+      config:
+        server-addr: 127.0.0.1:8848

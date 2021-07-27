@@ -1,0 +1,10 @@
+spring:
+  #  main:
+  #    web-application-type: none
+  profiles:
+    #    active: dev
+    active: ${profileActive}
+  application:
+    name: ware
+server:
+  port: 14000

@@ -1,0 +1,11 @@
+spring:
+  #  main:
+  #    web-application-type: none
+  profiles:
+    #    active: dev
+    active: ${profileActive}
+  application:
+    name: order
+server:
+  port: 12000
+
